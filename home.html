@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <main class="flex justify-center">
+        <!-- mobile feature start -->
+        <div class="mockup-phone h-[660px] bg-base-300 border-blue-950">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display">
+
+
+                <!-- stat start here :All the btn-->
+                <div class="mt-15">
+                    <div class="stats shadow ml-32">
+                        <div class="stat">
+                            <div id="current_balance" class="stat-value">9400</div>
+
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <!-- show btns -->
+                    <div class="flex flex-wrap gap-2 justify-between">
+                        <button id="add-btn-display" class="ml-2 btn btn-ml">Add Amount</button>
+
+                        <button id="transfer-btn-display" class="ml-2 btn btn-ml">Transfer Amount</button>
+
+                        <button id="cashOUt-btn-display" class="ml-2 btn btn-ml">Cash Out</button>
+
+                        <button id="addBonus-btn-display" class="ml-2 btn btn-ml">Add Bonus</button>
+
+                        <button id="PayBill-btn-display" class="ml-2 btn btn-ml">Pay Bill</button>
+
+                        <button id="Transaction-btn-display" class="ml-2 btn btn-ml">Transaction History</button>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <!-- add Money start -->
+                <div id="form-show-add-money" class="">
+                    <div class="">
+
+                        <div class="card shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+                                    <label class="label">Add Amount</label>
+                                    <input id="add-amount-form" type="text" class="input" placeholder="Number :" />
+
+                                    <label class="label">Pin</label>
+                                    <input id="add-input-pin-number" type="password" class="input"
+                                        placeholder="Pin :" />
+
+                                    <div><a class="link link-hover">Forgot password?</a></div>
+                                    <button id="Add-amount-btn" class="btn btn-neutral mt-4">Add Amount</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- get bonous start -->
+                <div id="form-show-addBonus-money" class="hidden">
+                    <div class="">
+
+                        <div class="card shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+                                    <label class="label">Get Bonus</label>
+                                    <input id="bonus-amount-form" type="text" class="input" placeholder="Number :" />
+
+                                    <label class="label">Pin</label>
+                                    <input id="bonus-input-pin-number" type="password" class="input"
+                                        placeholder="Pin :" />
+
+                                    <div><a class="link link-hover">Forgot password?</a></div>
+                                    <button id="bonus-amount-btn" class="btn btn-neutral mt-4">Get Bonus</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- get bonous end -->
+
+
+                <!-- login form for Cashout Money start -->
+                <div id="form-show-cash-out" class=" hidden">
+                    <div class="">
+
+                        <div class="card shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+                                    <label class="label">Cash Out</label>
+                                    <input id="CashOut-amount-form" type="text" class="input" placeholder="Tk Amount" />
+
+                                    <label class="label">Pin</label>
+                                    <input id="CashOut-input-pin-number" type="password" class="input"
+                                        placeholder="Pin :" />
+
+                                    <div><a class="link link-hover">Forgot password?</a></div>
+                                    <button id="cashOut-amount-btn" class="btn btn-neutral mt-4">Cash Out</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- login form for cashout money end -->
+
+                <!-- login form for Transfer Money start -->
+                <div id="form-show-transferMoney-out" class=" hidden">
+                    <div class="">
+
+                        <div class="card shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+                                    <label class="label">Amount</label>
+                                    <input id="transfer-amount-form" type="text" class="input"
+                                        placeholder="Enter Amount to transfer" />
+
+                                    <label class="label">Pin</label>
+                                    <input id="transfer-input-pin-number" type="password" class="input"
+                                        placeholder="2 digit pin:" />
+
+                                    <div><a class="link link-hover">Forgot password?</a></div>
+                                    <button id="tranfer-amount-btn" class="btn btn-neutral mt-4">Transfer Money</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- login form for transfer money end -->
+
+                <!-- login form for PayBill start -->
+                <div id="form-show-payBill-out" class=" hidden">
+                    <div class="">
+
+                        <div class="card shrink-0 shadow-2xl">
+                            <div class="card-body">
+                                <fieldset class="fieldset">
+                                    <label class="label">PayBill</label>
+                                    <input id="paybill-amount-form" type="text" class="input" placeholder="Tk Amount" />
+
+                                    <label class="label">Pin</label>
+                                    <input id="payBill-input-pin-number" type="password" class="input"
+                                        placeholder="Pin :" />
+
+                                    <div><a class="link link-hover">Forgot password?</a></div>
+                                    <button id="payBill-amount-btn" class="btn btn-neutral mt-4">PayBill</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- login form for PayBill money end -->
+
+                <!-- transaction section start -->
+                <section id="show-transection" class="">
+                </section>
+                <!-- transaction section end -->
+
+            </div>
+        </div>
+        <!-- mobile feature end -->
+
+    </main>
+    <script src="/js/utilities.js"></script>
+    <script src="js//utilities2.js"></script>
+    <script src="/js/feature.js"></script>
+
+</body>
+
+</html>
