@@ -25,9 +25,9 @@ function setTheTransactionHistory(tx, num1, num2) {
 }
 // cheak is isnan
 
-function chekIsnan(chek) {
+function checkIsnan(check) {
 
-    if (isNaN(chek)) {
+    if (isNaN(check)) {
         alert("Text is invalid,Write the exact amount")
         return;
     }
